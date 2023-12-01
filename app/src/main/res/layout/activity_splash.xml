@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_green"
+    tools:context=".splash">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Think clean and Go Green\nGo green to keep this world clean"
+        android:gravity="center"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:layout_above="@id/tree"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="75dp"
+        android:fontFamily="sans-serif"
+        >
+
+
+    </TextView>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/tree"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+
+        app:lottie_rawRes="@raw/tree">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAN GUARD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tree"
+        android:textColor="@color/green"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="130dp"
+        >
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From\nGreen Team"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"/>
+
+
+
+
+</RelativeLayout>

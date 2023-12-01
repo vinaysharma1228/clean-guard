@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_black"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/topCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        >
+
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="380dp"
+            android:background="@drawable/dark_circle_demo"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <TextView
+            android:layout_width="450dp"
+            android:layout_height="450dp"
+            android:background="@drawable/dark_circle_demo"
+            android:layout_marginLeft="-350dp"
+            android:layout_marginBottom="-100dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/ImageSameWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_marginLeft="100dp"
+
+        />
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/toolbar_bg"
+        android:padding="5dp"
+
+
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/app_logo2"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Clean Guard"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/setting"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            app:lottie_autoPlay="true"
+            app:lottie_colorFilter="@color/black"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/setting">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle_demo"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/imageSection"
+            android:layout_width="320dp"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/image_border"
+
+
+            >
+            <ImageView
+                android:id="@+id/selectedImage"
+                android:layout_width="320dp"
+                android:layout_height="300dp"
+                android:padding="5dp"
+                android:background="@drawable/image_transparent_bg_icon"
+
+                >
+
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_et"
+                android:padding="10dp"
+                android:hint=" Describe waste Type "
+                android:layout_marginBottom="30dp"
+
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submitBtn"
+        android:layout_width="200dp"
+        android:layout_below="@id/frame"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_demo"
+        android:drawableRight="@drawable/ba"
+        android:drawableTint="@color/white"
+        android:padding="5dp"
+        android:text="Submit"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="100dp"
+
+        />
+    <TextView
+        android:layout_below="@id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="'Waste Less, Live More\n Our App Makes It Easy!'"
+
+        />
+</RelativeLayout>

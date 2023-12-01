@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "966553723333",
+    "firebase_url": "https://clean-guard-274b4-default-rtdb.firebaseio.com",
+    "project_id": "clean-guard-274b4",
+    "storage_bucket": "clean-guard-274b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966553723333:android:ae6e64cf34e298daae2bac",
+        "android_client_info": {
+          "package_name": "com.rbhagat.cleanguard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnCVJChA7lk9ytVkQjtbxdkRAbmobRN0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
